@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "397732172475",
+    "firebase_url": "https://collegecommunicationportal.firebaseio.com",
+    "project_id": "collegecommunicationportal",
+    "storage_bucket": "collegecommunicationportal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:397732172475:android:ab9651b647689208cd0f9e",
+        "android_client_info": {
+          "package_name": "com.example.collegecommunicationportal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "397732172475-ud24as8u6s4a27tgb393cttuvdtg4ff2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.collegecommunicationportal",
+            "certificate_hash": "0ce61e58aab36baf9cfcf2d3db9451c5f40ac874"
+          }
+        },
+        {
+          "client_id": "397732172475-04brefn5q422m1r4ncllvmsidh32bctf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsi5DH3qUncCmoHp6Ar9VJyqMpJdG_Ip0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "397732172475-04brefn5q422m1r4ncllvmsidh32bctf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

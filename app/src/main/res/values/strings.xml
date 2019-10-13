@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">College Communication Portal</string>
+    <string name="selected">Selected</string>
+    <string name="subject">Subject</string>
+    <string name="college">Teacher</string>
+    <string name="room">Room</string>
+    <string name="add_exam">Post</string>
+    <string name="date_error">Date Error</string>
+    <string name="time_error">Time Error</string>
+    <string name="choose_date">Choose Date</string>
+    <string name="choose_time">Time</string>
+    <string name="field_error">Field Error</string>
+</resources>
