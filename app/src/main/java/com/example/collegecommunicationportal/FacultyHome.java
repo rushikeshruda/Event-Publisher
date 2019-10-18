@@ -182,10 +182,15 @@ public class FacultyHome extends AppCompatActivity implements View.OnClickListen
                 String date = textViewSelectDate.getText().toString().trim();
                 String time = textViewSelectTime.getText().toString().trim();
 
-                Post post = new Post(authorId,college,date,entryFees,id,time,title);
+                if (title.isEmpty()||college.isEmpty()||entryFees.isEmpty()||date.equals("Select Date")||time.equals("Select Time"))
+                {
+                    Toast.makeText(FacultyHome.this, "All Fields Required", Toast.LENGTH_SHORT).show();
+                }else {
 
-                databaseReference.child(id).setValue(post);
+                    Post post = new Post(authorId, college,"0", date, entryFees, id, time, title);
 
+                    databaseReference.child(id).setValue(post);
+                }
             }
         });
 

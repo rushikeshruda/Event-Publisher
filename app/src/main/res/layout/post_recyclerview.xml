@@ -29,11 +29,24 @@
             android:paddingRight="15dp"
             android:paddingBottom="15dp">
 
+            <ImageView
+                android:id="@+id/popupbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="2dp"
+                android:background="?selectableItemBackgroundBorderless"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintTop_toTopOf="@+id/textViewTitle"
+                card_view:srcCompat="@drawable/baseline_expand_more_black_24"
+                android:layout_marginRight="2dp" />
+
             <TextView
                 android:id="@+id/textViewTitle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="8dp"
                 android:text="Title"
                 android:textAlignment="center"
                 android:textAllCaps="true"
@@ -43,7 +56,9 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                card_view:layout_constraintStart_toEndOf="parent" />
+                card_view:layout_constraintEnd_toStartOf="@+id/popupbtn"
+                android:layout_marginLeft="34dp"
+                android:layout_marginRight="8dp" />
 
             <View
                 android:id="@+id/line"

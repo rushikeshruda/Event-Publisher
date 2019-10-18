@@ -28,12 +28,9 @@ import java.util.List;
 public class StudentHome extends AppCompatActivity {
 
     List<Post> productList;
-    EditText editTextTitle, editTextCollege, editTextEntryFee;
-    TextView textViewSelectDate, textViewSelectTime;
 
     Post post;
     RecyclerView recyclerView;
-    View createPost;
     DatabaseReference databaseReference;
     ProgressDialog progressDialog;
 

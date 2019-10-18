@@ -34,14 +34,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.student:
                 Intent i = new Intent(MainActivity.this,StudentLogin.class);
                 startActivity(i);
-                finish();
 
 
                 break;
             case R.id.faculty:
                 Intent i1 = new Intent(MainActivity.this,FacultyLogin.class);
                 startActivity(i1);
-                finish();
 
                 break;
         }

@@ -1,14 +1,16 @@
 package com.example.collegecommunicationportal.Model;
 
+import java.io.Serializable;
+
 /**
  * Created by Ulan on 07.12.2018.
  */
-public class Post {
-    private String authorID,title, college, time, date,entryFee,id;
+public class Post implements Serializable {
+    private String authorID,title, college, time, date,entryFee,id,count;
 
     public Post() {}
 
-    public Post(String authorID,String college,String date, String entryFee, String id, String time, String title) {
+    public Post(String authorID,String college,String count,String date, String entryFee, String id, String time, String title) {
 
         this.authorID = authorID;
         this.id = id;
@@ -17,6 +19,15 @@ public class Post {
         this.entryFee = entryFee;
         this.time = time;
         this.date = date;
+        this.count = count;
+    }
+
+    public String getCount() {
+        return count;
+    }
+
+    public void setCount(String count) {
+        this.count = count;
     }
 
     public String getAuthorID() {

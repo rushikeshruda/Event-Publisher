@@ -1,6 +1,7 @@
 package com.example.collegecommunicationportal.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -13,6 +14,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.collegecommunicationportal.Model.Post;
 import com.example.collegecommunicationportal.R;
+import com.example.collegecommunicationportal.RegisterPost;
+import com.example.collegecommunicationportal.RegisteredStudent;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -50,6 +53,8 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ProductViewHol
         holder.textViewEntryFees.setText(String.valueOf(product.getEntryFee()));
         holder.textViewDate.setText(String.valueOf(product.getDate()));
         holder.textViewTime.setText(String.valueOf(product.getTime()));
+        holder.textViewCount.setText(String.valueOf(product.getCount()));
+
 
         holder.imageView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,6 +85,19 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ProductViewHol
             }
         });
 
+        holder.textViewView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(mCtx, RegisteredStudent.class);
+
+                intent.putExtra("Post", product);
+
+                view.getContext().startActivity(intent);
+
+            }
+        });
+
 
     }
 
@@ -92,7 +110,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ProductViewHol
 
     class ProductViewHolder extends RecyclerView.ViewHolder {
 
-        TextView textViewTitle, textViewCollege, textViewEntryFees, textViewDate,textViewTime;
+        TextView textViewTitle, textViewCollege, textViewEntryFees, textViewDate,textViewTime,textViewCount,textViewView;
         ImageView imageView;
 
 
@@ -105,7 +123,8 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ProductViewHol
             textViewDate = itemView.findViewById(R.id.dateexams);
             textViewTime= itemView.findViewById(R.id.timeexams);
             imageView = itemView.findViewById(R.id.popupbtn);
-
+            textViewCount = itemView.findViewById(R.id.textViewcount);
+            textViewView = itemView.findViewById(R.id.textViewView);
         }
     }
 }
